@@ -24,14 +24,15 @@ import { IoLogoDiscord } from "react-icons/io5";
 const Footer = () => {
   return (
     <>
-      <Grid container sx={{ backgroundColor: "black", p: "50px" }}>
+      <Grid container sx={{ backgroundColor: "black", p: "85px" }}>
         <Grid item lg={4}>
           <Typography
             variant="h5"
-            sx={{ borderLeft: "2px solid #00DACD", color: "white" }}
+            sx={{ borderLeft: "4px solid #00DACD", color: "white",paddingLeft: "8px" }}
           >
             Be future-ready
           </Typography>
+          <br />
           <span style={{ color: "white", fontSize: "12px" }}>
             Get the latest from theKaanch ecosystem and engineering updates,{" "}
             <br /> straight to your inbox.
@@ -87,15 +88,15 @@ const Footer = () => {
           <br />
           <span style={{ color: "white", fontSize: "12px" }}>
             I consent to receive commercial information in the form of a
-            newsletter sent to the e-mail address provided by the Kaanch
-            Foundation with registered seat in Bergliweg 15, 6300 Zug. Providing
-            consent is voluntary. Consent may be revoked at any time.
+            newsletter <br /> sent to the e-mail address provided by the Kaanch
+            Foundation with <br /> registered seat in Bergliweg 15, 6300 Zug. Providing
+            consent <br /> is voluntary. Consent may be revoked at any time.
           </span>
           <Box
             sx={{
               display: "flex",
               alignItems: "center",
-              gap:{lg:2,sm:1,xs:1},
+              gap:{lg:1,sm:1,xs:1},
               backgroundColor: "#000",
               padding:{lg:2,sm:1,xs:1},
             }}
