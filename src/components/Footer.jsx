@@ -24,7 +24,7 @@ import { IoLogoDiscord } from "react-icons/io5";
 const Footer = () => {
   return (
     <>
-      <Grid container sx={{ backgroundColor: "black", p: "85px" }}>
+      <Grid container sx={{ backgroundColor: "black", p:{lg:'85px',sm:'20px,',xs:'20px'} }}>
         <Grid item lg={4}>
           <Typography
             variant="h5"

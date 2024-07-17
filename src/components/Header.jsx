@@ -5,6 +5,7 @@ import logo from "../assets/logo.png";
 import Navbar from "./Navbar";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import DropdownButton from "./DropdownButton";
+import logo from '../assets/logo.png';
 
 
 const Header = () => {

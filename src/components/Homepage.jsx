@@ -7,6 +7,7 @@ import shifted from "../assets/sifted.png";
 import monetary from "../assets/monetary.svg";
 import Livedata from "./Livedata";
 import FloatingSidebar from "./FloatingSidebar";
+import { Grid4x4Outlined } from "@mui/icons-material";
 
 const features = [
   {
@@ -138,25 +139,25 @@ const Homepage = () => {
           backgroundColor: "black",
         }}
       >
-        <Box sx={{ textAlign: "center" }}>
+        <Grid item lg={12} sm={12} xs={12} sx={{ textAlign: "center" }}>
           <Typography sx={{ mt: 4, color: "white" }}>FEATURED IN</Typography>
           <Marquee style={{ marginTop: "20px" }}>
             {features.map((e) => {
               return (
-                <Image sx={{ m: 2 }} src={e.img} width={200} alt={e.alt} />
+                <Image sx={{ m: 2 }} src={e.img} width={150} alt={e.alt} />
               );
             })}
           </Marquee>
-        </Box>
+        </Grid>
       </Grid>
 
-      <Grid container sx={{ backgroundColor: "black", px: 15, py: 10 }}>
+      <Grid container sx={{ backgroundColor: "black", px:{lg:15,sm:5,xs:5}, py: 10,display:'flex',justifyContent:'center' }}>
         <Grid item lg={6} data-aos="fade-right">
-          <Typography variant="h3" sx={{ color: "white" }}>
-          Join a community <br /> of millions.
+          <Typography variant="h3" sx={{ color: "white",fontSize:{lg:'30px',sm:'25px',xs:'25px'} }}>
+          Join a community of millions.
           </Typography>
         </Grid>
-        <Grid item lg={6} data-aos="fade-left">
+        <Grid item lg={6} sx={{ mt:2 }} data-aos="fade-left">
           <Typography
             variant="h1"
             align="left"
@@ -164,6 +165,7 @@ const Homepage = () => {
               backgroundImage: `linear-gradient(45deg, #5514B4, #FF80FF)`,
               backgroundSize: "100%",
               backgroundRepeat: "repeat",
+              fontSize:{lg:'100px',sm:'50px',xs:'50px'},
               backgroundClip: "text",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
@@ -171,7 +173,7 @@ const Homepage = () => {
           >
             29.7M
           </Typography>
-          <Typography variant="h6" sx={{ color: "white" }}>
+          <Typography variant="h6" sx={{ color: "white",fontSize:{lg:'20px',sm:'14px',xs:'14px'} }}>
             FEE PAYING ACCOUNTS, ALL TIME
           </Typography>
           <Typography
@@ -182,6 +184,7 @@ const Homepage = () => {
               backgroundSize: "100%",
               backgroundRepeat: "repeat",
               backgroundClip: "text",
+              fontSize:{lg:'100px',sm:'50px',xs:'50px'},
               mt: 5,
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
@@ -189,7 +192,7 @@ const Homepage = () => {
           >
             340M+
           </Typography>
-          <Typography variant="h6" sx={{ color: "white" }}>
+          <Typography variant="h6" sx={{ color: "white",fontSize:{lg:'20px',sm:'14px',xs:'14px'} }}>
             NIFT MINES
           </Typography>
           <Typography
@@ -200,6 +203,7 @@ const Homepage = () => {
               backgroundSize: "100%",
               backgroundRepeat: "repeat",
               backgroundClip: "text",
+              fontSize:{lg:'100px',sm:'50px',xs:'50px'},
               mt: 5,
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
@@ -207,13 +211,13 @@ const Homepage = () => {
           >
             $0.00064
           </Typography>
-          <Typography variant="h6" sx={{ color: "white" }}>
+          <Typography variant="h6" sx={{ color: "white",fontSize:{lg:'20px',sm:'14px',xs:'14px'} }}>
             MEDIAN FEE PER TRANSACTION
           </Typography>
         </Grid>
       </Grid>
 
-      <Grid container sx={{ backgroundColor: "black", px: 15, py: 10 }}>
+      <Grid container sx={{ backgroundColor: "black", px:{lg:15,sm:2,xs:2}, py: 10 }}>
         <Grid item lg={4} data-aos="fade-up">
           <Typography variant="h3" sx={{ color: "white" }}>
           Made for mass <br /> adoption.
