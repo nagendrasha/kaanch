@@ -153,7 +153,7 @@ const Homepage = () => {
 
       <Grid container sx={{ backgroundColor: "black", px:{lg:15,sm:5,xs:5}, py: 10,display:'flex',justifyContent:'center' }}>
         <Grid item lg={6} data-aos="fade-right">
-          <Typography variant="h3" sx={{ color: "white",fontSize:{lg:'30px',sm:'25px',xs:'25px'} }}>
+          <Typography variant="h3" sx={{ color: "white",fontSize:{lg:'50px',sm:'25px',xs:'25px'} }}>
           Join a community of millions.
           </Typography>
         </Grid>
@@ -219,8 +219,8 @@ const Homepage = () => {
 
       <Grid container sx={{ backgroundColor: "black", px:{lg:15,sm:2,xs:2}, py: 10 }}>
         <Grid item lg={4} data-aos="fade-up">
-          <Typography variant="h3" sx={{ color: "white" }}>
-          Made for mass <br /> adoption.
+          <Typography variant="h3" sx={{ color: "white",fontSize:{lg:'50px',sm:'25px',xs:'25px'} }}>
+          Made for mass adoption.
           </Typography>
         </Grid>
         <Grid item lg={8} data-aos="fade-up">
