@@ -76,20 +76,6 @@ const features = [
 ];
 
 const Homepage = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    // Cleanup event listener on component unmount
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   return (
     <>
@@ -473,11 +459,12 @@ const Homepage = () => {
       <Grid
         container
         sx={{ backgroundColor: "black", px: { lg: 15, sm: 2, xs: 2 } }}
+        
       >
         {boxes.map((e) => (
           <Grid
             key={e.id}
-            data-aos={!isMobile ? e.aos : undefined}
+            data-aos="fade-left"
             item
             lg={3.5}
             sx={{
