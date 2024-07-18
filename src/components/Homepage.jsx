@@ -15,6 +15,8 @@ import { Grid4x4Outlined } from "@mui/icons-material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOutlined";
 import crypto from "../assets/crypto.jpg";
+import blockchain from "../assets/Blockchain.png";
+import bg1 from "../assets/bg1.jpg";
 import SlidesComp from "./SlidesComp";
 import Typewriter from "typewriter-effect";
 
@@ -30,7 +32,7 @@ const boxes = [
   {
     id: 2,
     title: "Homebase",
-    image: crypto,
+    image: blockchain,
     desc: "Homebase used the Solana blockchain to successfully tokenized a single-family rental property.",
     link: "https://www.bobaguy.com/",
     aos: "fade-up",
@@ -74,7 +76,6 @@ const features = [
 ];
 
 const Homepage = () => {
-
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
@@ -82,11 +83,11 @@ const Homepage = () => {
       setIsMobile(window.innerWidth <= 768);
     };
 
-    window.addEventListener('resize', handleResize);
-    
+    window.addEventListener("resize", handleResize);
+
     // Cleanup event listener on component unmount
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -397,7 +398,7 @@ const Homepage = () => {
               color: "white",
               border: "1px solid white",
               float: "right",
-              mt:{lg:2,sm:2,xs:2}
+              mt: { lg: 2, sm: 2, xs: 2 },
             }}
           >
             GO TO CASE STUDIES <ArrowForwardIcon sx={{ color: "white" }} />
@@ -409,7 +410,7 @@ const Homepage = () => {
           sx={{
             position: "relative",
             borderRadius: "20px",
-            backgroundImage: `url('https://www.shutterstock.com/image-illustration/top-7-cryptocurrency-tokens-by-600nw-2152214777.jpg')`,
+            backgroundImage: `url(${bg1.src})`,
             backgroundSize: "cover",
             backgroundColor: "gray",
             backgroundPosition: "center",
@@ -487,7 +488,7 @@ const Homepage = () => {
               backgroundColor: "gray",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
-              p: {lg:4,sm:3,xs:3},
+              p: { lg: 4, sm: 3, xs: 3 },
               mt: 2,
               mx: 2,
               overflow: "hidden",
@@ -556,6 +557,54 @@ const Homepage = () => {
             </Box>
           </Grid>
         ))}
+      </Grid>
+
+      <Grid
+        container
+        sx={{ backgroundColor: "black", p: { lg: 15, sm: 3, xs: 3 } }}
+      >
+        <Grid
+          item
+          xs={12}
+          md={12}
+          sx={{
+            backgroundColor: "rgba(255, 255, 255, 0.1)",
+            py: 15, px:{lg:10,sm:2,xs:2},
+            borderRadius:'20px',
+            display:'flex',
+            flexDirection:'column',
+            justifyContent:'center',
+            textAlign:'center'
+           }}
+           data-aos="flip-up"
+        >
+         
+          <Typography variant="h2" sx={{ color:'white',fontSize:{lg:'50px',sm:'25px',xs:'25px'} }}>
+            It's time to join the thousands of creators, artists, and developers
+            using Solana.
+          </Typography>
+          <Box>
+          <Button
+              variant="contained"
+              sx={{
+                color: "white",
+                width:200,
+                mt:2,
+                p: "15px 30px",
+                borderRadius: "100px",
+                mr: "10px",
+                "&:hover": {
+                  background: "white",
+                  color: "black",
+                },
+                background:
+                  "linear-gradient(108deg, rgba(0,218,205,1) 54%, rgba(0,0,0,1) 100%)",
+              }}
+            >
+              Start Building
+            </Button>
+            </Box>
+        </Grid>
       </Grid>
     </>
   );
