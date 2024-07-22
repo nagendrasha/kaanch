@@ -14,7 +14,7 @@ import {
   ListItemText,
   Collapse,
 } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import InfoIcon from "@mui/icons-material/Info";
@@ -38,6 +38,12 @@ import { IoLogoDiscord } from "react-icons/io5";
 import logo from "../assets/logo.png";
 import Image from "next/image";
 import DropdownButton from "./DropdownButton";
+import Link from "next/link";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+
 
 const navItems = [
   {
@@ -45,8 +51,8 @@ const navItems = [
     name: "Uncover",
     link: "/",
     submenu: [
-      { name: "About", link: "/sub1-1", icon: <InfoIcon /> },
-      { name: "Technology", link: "/sub1-2", icon: <CallSplitIcon /> },
+      { name: "About", link: "/about", icon: <InfoIcon /> },
+      { name: "Technology", link: "/technology", icon: <CallSplitIcon /> },
       {
         name: "Center stage(Kaanch foundation)",
         link: "/sub1-2",
@@ -113,6 +119,12 @@ const Navbar = () => {
     setMobileOpen(!mobileOpen);
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+    });
+  }, []);
+
   const handleSubmenuToggle = (id) => {
     setOpenSubmenu((prevOpenSubmenu) => ({
       ...prevOpenSubmenu,
@@ -155,9 +167,11 @@ const Navbar = () => {
         }}
       >
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-          <Box sx={{ height: 40 }}>
-            <Image src={logo} alt="Kaanch" width={200} height={40} />
-          </Box>
+          <Link href="/">
+            <Box sx={{ height: 40 }}>
+              <Image src={logo} alt="Kaanch" width={200} height={40} />
+            </Box>
+          </Link>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -209,18 +223,20 @@ const Navbar = () => {
                       }}
                       onClick={handleMenuClose}
                     >
-                      <Box sx={{ display: "flex", justifyContent: "center" }}>
-                        <span
-                          style={{
-                            color: "#00DACD",
-                            marginRight: "10px",
-                            fontSize: "14px",
-                          }}
-                        >
-                          {subItem.icon}
-                        </span>{" "}
-                        {subItem.name}
-                      </Box>
+                      <Link href={subItem.link} style={{ textDecoration:'none',color:'white' }}>
+                        <Box sx={{ display: "flex", justifyContent: "center" }}>
+                          <span
+                            style={{
+                              color: "#00DACD",
+                              marginRight: "10px",
+                              fontSize: "14px",
+                            }}
+                          >
+                            {subItem.icon}
+                          </span>{" "}
+                          {subItem.name}
+                        </Box>
+                      </Link>
                     </MenuItem>
                   ))}
                 </Menu>
