@@ -58,8 +58,8 @@ const navItems = [
         link: "/sub1-2",
         icon: <CallSplitIcon />,
       },
-      { name: "Mission", link: "/sub1-2", icon: <DeviceHubIcon /> },
-      { name: "Solutions", link: "/sub1-2", icon: <LanguageIcon /> },
+      { name: "Mission", link: "/mission", icon: <DeviceHubIcon /> },
+      { name: "Solutions", link: "/solution", icon: <LanguageIcon /> },
     ],
   },
   {

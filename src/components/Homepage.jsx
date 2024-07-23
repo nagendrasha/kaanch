@@ -77,8 +77,8 @@ const Homepage = () => {
       <Grid sx={{ position: "relative", overflow: "hidden" }}>
         <iframe
           src="https://my.spline.design/chips-cce8ab03f1c27790fb70c32bd4e3a19e/"
-          width="100%"
-          height="100%"
+          width="100vh"
+          height="100vh"
           style={{ border: "none", position: "absolute", top: 0, left: 0 }}
         ></iframe>
         <Grid
