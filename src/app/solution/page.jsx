@@ -77,8 +77,8 @@ const page = () => {
         sx={{
           position: "relative",
           textAlign: "center",
-          py: 10,
-          px: 10,
+          py:{lg:10,sm:1,xs:1},
+          px:{lg:10,sm:3,xs:3},
           overflow: "hidden",
           "::before": {
             content: '""',
@@ -97,11 +97,11 @@ const page = () => {
         }}
       >
         <Grid container>
-          <Grid item lg={6} sx={{ textAlign: "left", py: 2, pl: 10, mt: 10 }}>
+          <Grid item lg={6} sm={6} md={6} sx={{ textAlign: "left", py:{lg:2,sm:10}, pl:{lg:10,sm:1,xs:1}, mt:{lg:10,sm:3,xs:3} }}>
           <Typography
             variant="h1"
             sx={{
-              fontSize: { lg: "50px", sm: "30px", xs: "30px" },
+              fontSize: { lg: "50px", sm: "40px", xs: "40px" },
               color: "#00DACD",
             }}
           >
@@ -113,12 +113,12 @@ const page = () => {
             solutions that will benefit from using a decentralized architecture.
           </Typography>
           </Grid>
-          <Grid item lg={6} sx={{ textAlign: "center" }}>
+          <Grid item lg={6} md={6} sm={6} sx={{ textAlign: "center" }}>
             <Player
               autoplay
               loop
               src={supplychain}
-              style={{ height: "400px", width: "400px" }}
+              style={{ height:{lg:"400px",sm:"300px"}, width:{lg:"400px",sm:'300px'} }}
             />
           </Grid>
         </Grid>
@@ -126,11 +126,11 @@ const page = () => {
         <Grid container>
           {solutions.map((e) => {
             return (
-              <Grid item md={4} xs={12} key={e.id}>
+              <Grid item lg={4} md={6} sm={6} xs={12} key={e.id}>
                 <Card
                   sx={{
                     minWidth: 250,
-                    maxHeight:280,
+                    maxHeight:{lg:280,sm:300,xs:300},
                     m: 2,
                     backgroundColor: "rgba(255, 255, 255, 0.1)",
                     color: "#fff",

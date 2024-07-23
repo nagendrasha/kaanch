@@ -21,57 +21,57 @@ const metrics = [
     id: 1,
     title: "Ticker",
     value: "Kaanch",
-    aos:'fade-left'
+    aos: "fade-left",
   },
   {
     id: 2,
     title: "Type",
     value: "Utility",
-    aos:'fade-up'
+    aos: "fade-up",
   },
   {
     id: 3,
     title: "Circulating supply",
     value: "314,871,854",
-    aos:'fade-down'
+    aos: "fade-down",
   },
   {
     id: 4,
     title: "Total supply",
     value: "361,936,949",
-    aos:'fade-right'
+    aos: "fade-right",
   },
   {
     id: 5,
     title: "% Staked",
     value: "70%",
-    aos:'fade-left'
+    aos: "fade-left",
   },
   {
     id: 6,
     title: "# of Wallets",
     value: "219,000",
-    aos:'fade-up'
+    aos: "fade-up",
   },
   ,
   {
     id: 7,
     title: "Inflation",
     value: "30,000,000/Yr",
-    aos:'fade-down'
+    aos: "fade-down",
   },
   ,
   {
     id: 8,
     title: "Volume",
     value: "$2,818,870",
-    aos:'fade-right'
+    aos: "fade-right",
   },
   {
     id: 9,
     title: "Market cap",
     value: "$311,001,732",
-    aos:'fade-up'
+    aos: "fade-up",
   },
 ];
 
@@ -83,8 +83,8 @@ const page = () => {
         sx={{
           position: "relative",
           textAlign: "center",
-          py: 10,
-          px: 10,
+          py: { lg: 10, sm: 3, xs: 3 },
+          px: { lg: 10, sm: 2, xs: 2 },
           overflow: "hidden",
           "::before": {
             content: '""',
@@ -106,13 +106,14 @@ const page = () => {
           <Typography
             variant="h1"
             sx={{
-              backgroundImage: `linear-gradient(45deg, #5514B4, #FF80FF)`,
-              backgroundSize: "100%",
-              backgroundRepeat: "repeat",
-              fontSize: { lg: "50px", sm: "30px", xs: "30px" },
-              backgroundClip: "text",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
+              // backgroundImage: `linear-gradient(45deg, #5514B4, #FF80FF)`,
+              // backgroundSize: "100%",
+              // backgroundRepeat: "repeat",
+              fontSize: { lg: "50px", sm: "40px", xs: "35px" },
+              // backgroundClip: "text",
+              // WebkitBackgroundClip: "text",
+              // WebkitTextFillColor: "transparent",
+              color:"#00DACD"
             }}
           >
             We Elevate Brands With <br />
@@ -128,8 +129,13 @@ const page = () => {
         <Grid container sx={{ mt: 10 }} data-aos="fade-up">
           <Grid item xs={12} md={6} sx={{ textAlign: "left" }}>
             <Typography
-              variant="h3"
-              sx={{ color: "white", pl: 1, color: "#00DACD" }}
+              variant="h4"
+              sx={{
+                color: "white",
+                pl: 1,
+                color: "#00DACD",
+                fontSize: { lg: "50px", sm: "40px", sm: "35px" },
+              }}
             >
               Our Mission
             </Typography>
@@ -144,8 +150,13 @@ const page = () => {
           </Grid>
           <Grid item xs={12} md={6} sx={{ textAlign: "left" }}>
             <Typography
-              variant="h3"
-              sx={{ color: "white", pl: 1, color: "#00DACD" }}
+              variant="h4"
+              sx={{
+                color: "white",
+                pl: 1,
+                color: "#00DACD",
+                fontSize: { lg: "50px", sm: "40px", sm: "35px" },
+              }}
             >
               Our Vision
             </Typography>
@@ -165,14 +176,14 @@ const page = () => {
         container
         sx={{
           backgroundColor: "black",
-          px: 10,
+          px:{lg:10,sm:2,xs:2},
           display: "flex",
           justifyContent: "space-evenly",
         }}
       >
         {metrics.map((e) => {
           return (
-            <Grid item md={3} xs={12} key={e.id} data-aos={e.aos} >
+            <Grid item md={3} xs={12} key={e.id}>
               <Card
                 sx={{
                   minWidth: 240,
