@@ -39,11 +39,8 @@ import logo from "../assets/logo.png";
 import Image from "next/image";
 import DropdownButton from "./DropdownButton";
 import Link from "next/link";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const navItems = [
   {
@@ -68,7 +65,11 @@ const navItems = [
     link: "/about",
     submenu: [
       { name: "Roadmap", link: "/roadmap", icon: <AccountBalanceWalletIcon /> },
-      { name: "Performance matrics", link: "/performance-matrics", icon: <TimelineIcon /> },
+      {
+        name: "Performance matrics",
+        link: "/performance-matrics",
+        icon: <TimelineIcon />,
+      },
       { name: "Tokenomics", link: "/tokenomics", icon: <TokenIcon /> },
       { name: "Use cases", link: "/use-cases", icon: <SecurityIcon /> },
       { name: "Consensus Mechanism", link: "/sub2-2", icon: <SsidChartIcon /> },
@@ -223,7 +224,10 @@ const Navbar = () => {
                       }}
                       onClick={handleMenuClose}
                     >
-                      <Link href={subItem.link} style={{ textDecoration:'none',color:'white' }}>
+                      <Link
+                        href={subItem.link}
+                        style={{ textDecoration: "none", color: "white" }}
+                      >
                         <Box sx={{ display: "flex", justifyContent: "center" }}>
                           <span
                             style={{
