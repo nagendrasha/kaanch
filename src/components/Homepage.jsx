@@ -75,9 +75,12 @@ const features = [
 
 const Homepage = () => {
   return (
+    <>
     <Wrapper>
       <Grid container sx={{ height:{lg:'auto',sm:'500px',xs:'500px'} }}>
-      <Spline scene="https://prod.spline.design/YNlxHU81ZyprXqwS/scene.splinecode" />
+      <Spline
+        scene="https://prod.spline.design/M3igXSmK1c7W4lFb/scene.splinecode" 
+      />
       <Content>
         <Box
           sx={{
@@ -85,7 +88,7 @@ const Homepage = () => {
             py: { lg: "50px", sm: "20px", xs: "20px" },
           }}
         >
-          <span style={{ color: "black", fontSize: "40px" }}>
+          {/* <span style={{ color: "black", fontSize: "40px" }}>
             <Typewriter
               options={{
                 strings: ["Kaanch", "Network"],
@@ -93,8 +96,8 @@ const Homepage = () => {
                 loop: true,
               }}
             />
-          </span>
-          <Typography
+          </span> */}
+          {/* <Typography
             variant="h2"
             sx={{
               color:"black",
@@ -105,8 +108,8 @@ const Homepage = () => {
           >
             Commanding the future,
             <br /> Unyielding in Trust
-          </Typography>
-          <br />
+          </Typography> */}
+          {/* <br />
           <Typography
             sx={{
               color:'black',
@@ -119,9 +122,9 @@ const Homepage = () => {
             layer 1 that enables teams to deploy scalable, secure, low-cost, and
             ZK privacy-enhanced products across multiple verticals—from DeFi and
             gaming to enterprise.
-          </Typography>
+          </Typography> */}
         </Box>
-        <Grid container sx={{ display: "flex", justifyContent: "center" }}>
+        <Grid container sx={{ display: "flex", justifyContent: "center",pt:35 }}>
           <Grid
             item
             lg={6}
@@ -594,6 +597,7 @@ const Homepage = () => {
         </Grid>
       </Grid>
     </Wrapper>
+    </>
   );
 };
 
