@@ -79,55 +79,24 @@ const Homepage = () => {
       <Wrapper>
         <Grid
           container
-          sx={{ height: { lg: "700px", sm: "500px", xs: "500px" } }}
+          sx={{
+            height: { lg: "700px", sm: "500px", xs: "500px" },
+            width: { lg: "100%" },
+          }}
         >
-          {/* <Spline
-        scene="https://prod.spline.design/M3igXSmK1c7W4lFb/scene.splinecode" 
-      /> */}
-          <Spline scene="https://prod.spline.design/M3igXSmK1c7W4lFb/scene.splinecode" />
+          {/* <Spline scene="https://prod.spline.design/M3igXSmK1c7W4lFb/scene.splinecode" /> */}
+          <Spline
+            scene="https://prod.spline.design/M3igXSmK1c7W4lFb/scene.splinecode"
+            width={1920}
+            height={1080}
+          />
           <Content>
             <Box
               sx={{
                 textAlign: "center",
                 py: { lg: "50px", sm: "20px", xs: "20px" },
               }}
-            >
-              {/* <span style={{ color: "black", fontSize: "40px" }}>
-            <Typewriter
-              options={{
-                strings: ["Kaanch", "Network"],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </span> */}
-              {/* <Typography
-            variant="h2"
-            sx={{
-              color:"black",
-              fontWeight: "bold",
-              fontSize: { lg: "60px", sm: "30px", xs: "30px" },
-            }}
-            data-aos="fade-right"
-          >
-            Commanding the future,
-            <br /> Unyielding in Trust
-          </Typography> */}
-              {/* <br />
-          <Typography
-            sx={{
-              color:'black',
-              fontSize: { lg: "20px", sm: "14px", xs: "14px" },
-              textAlign: "center",
-              p: { lg: "20px", sm: "10px", xs: "10px" },
-            }}
-          >
-            Deploy Web3 apps that are as fast as legacy solutions. Kaanch is a
-            layer 1 that enables teams to deploy scalable, secure, low-cost, and
-            ZK privacy-enhanced products across multiple verticals—from DeFi and
-            gaming to enterprise.
-          </Typography> */}
-            </Box>
+            ></Box>
             <Grid
               container
               sx={{ display: "flex", justifyContent: "center", pt: 35 }}
@@ -248,12 +217,16 @@ const Homepage = () => {
       <Wrapper>
         <Grid
           container
-          sx={{ height: { lg: "600px", sm: "500px", xs: "500px" } }}
+          sx={{ height: { lg: "auto", sm: "500px", xs: "500px" } }}
         >
           {/* <Spline
       scene="https://prod.spline.design/M3igXSmK1c7W4lFb/scene.splinecode" 
     /> */}
-          <Spline scene="https://prod.spline.design/3c9yYnuYkeqq0oOU/scene.splinecode" />
+          <Spline
+            scene="https://prod.spline.design/3c9yYnuYkeqq0oOU/scene.splinecode"
+            width={1920}
+            height={1080}
+          />
           <Content>
             <Grid
               container
@@ -366,29 +339,46 @@ const Homepage = () => {
         </Grid>
       </Wrapper>
 
-      <Grid
-        container
-        sx={{
-          backgroundColor: "black",
-          px: { lg: 15, sm: 2, xs: 2 },
-          py: 10,
-        }}
-      >
-        <Grid item lg={4} data-aos="fade-up">
-          <Typography
-            variant="h3"
-            sx={{
-              color: "white",
-              fontSize: { lg: "50px", sm: "25px", xs: "25px" },
-            }}
-          >
-            Made for mass adoption.
-          </Typography>
+      <Wrapper>
+        <Grid
+          container
+          sx={{ height: { lg: "auto", sm: "500px", xs: "500px" } }}
+        >
+          {/* <Spline
+      scene="https://prod.spline.design/M3igXSmK1c7W4lFb/scene.splinecode" 
+    /> */}
+          <Spline
+            scene="https://prod.spline.design/zCmDK9e1EkkXzBZj/scene.splinecode"
+            width={1920}
+            height={1080}
+          />
+          <Content>
+            <Grid
+              container
+              sx={{
+                backgroundColor: "transparent",
+                px: { lg: 15, sm: 2, xs: 2 },
+                py: 10,
+              }}
+            >
+              <Grid item lg={4} data-aos="fade-up">
+                <Typography
+                  variant="h3"
+                  sx={{
+                    color: "purple",
+                    fontSize: { lg: "50px", sm: "25px", xs: "25px" },
+                  }}
+                >
+                  Made for mass adoption.
+                </Typography>
+              </Grid>
+              <Grid item lg={8} data-aos="fade-up">
+                <Livedata />
+              </Grid>
+            </Grid>
+          </Content>
         </Grid>
-        <Grid item lg={8} data-aos="fade-up">
-          <Livedata />
-        </Grid>
-      </Grid>
+      </Wrapper>
 
       <Grid
         container
@@ -627,6 +617,20 @@ const Homepage = () => {
           </Box>
         </Grid>
       </Grid>
+      <main>
+        <Spline
+          scene="https://prod.spline.design/6SjOXeB2lyrB6BO8/scene.splinecode"
+          width={1600}
+          height={900}
+        />
+      </main>
+      <main>
+        <Spline
+          scene="https://prod.spline.design/3c9yYnuYkeqq0oOU/scene.splinecode"
+          width={1600}
+          height={900}
+        />
+      </main>
     </>
   );
 };
@@ -645,10 +649,10 @@ const Wrapper = styled.div`
     margin: 0;
     top: 0;
     right: 0;
-    width: 1200px;
+    width: 100%;
     height: 1000px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1600px) {
       transform: scale(0.8) translateX(200px);
       transform-origin: top;
     }
@@ -678,7 +682,7 @@ const Content = styled.div`
   flex-direction: column;
   gap: 80px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1600px) {
     gap: 40px;
   }
   button {

@@ -53,13 +53,18 @@ const Livedata = () => {
               minWidth: 250,
               m: 2,
               backgroundColor: "rgba(255, 255, 255, 0.1)",
-              color: "#fff",
+              color: "black",
               p: 2,
               borderRadius: 2,
             }}
           >
             <CardContent>
-              <Typography color="white" gutterBottom sx={{ fontSize: "20px" }}>
+              <Typography
+                variant="h6"
+                color="black"
+                gutterBottom
+                sx={{ fontSize: "20px" }}
+              >
                 <span
                   style={{
                     borderLeft: `4px solid ${e.color}`,
@@ -69,10 +74,14 @@ const Livedata = () => {
                   {e.title}
                 </span>
               </Typography>
-              <Typography sx={{ mb: 1.5, mt: 3 }} color="white">
+              <Typography
+                variant="h6"
+                sx={{ mb: 1.5, mt: 3, fontSize: "16px" }}
+                color="black"
+              >
                 {e.desc}
               </Typography>
-              <Typography variant="h5" sx={{ mt: 2 }}>
+              <Typography variant="h5" sx={{ mt: 2, fontSize: "16px" }}>
                 <FiberManualRecordIcon
                   sx={{ fontSize: "10px", color: e.color }}
                 />{" "}
@@ -80,7 +89,9 @@ const Livedata = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Typography sx={{ color: "gray" }}>{e.feature}</Typography>
+              <Typography variant="h6" sx={{ color: "white", fontSize: "12px" }}>
+                {e.feature}
+              </Typography>
             </CardActions>
           </Card>
         </Grid>
