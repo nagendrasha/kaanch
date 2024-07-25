@@ -18,48 +18,56 @@ const matrics = [
     title: "Total Supply",
     value: "0xa241605a78e7a34fe19fda",
     icon: SettingsIcon,
+    aos:'fade-up'
   },
   {
     id: 2,
     title: "Total Account",
     value: "5223",
     icon: AnalyticsIcon,
+    aos:'fade-up'
   },
   {
     id: 3,
     title: "Total Block",
     value: "34149062",
     icon: ViewInArIcon,
+    aos:'fade-up'
   },
   {
     id: 4,
     title: "Total Transaction",
     value: "63240898",
     icon: PriceCheckIcon,
+    aos:'fade-up'
   },
   {
     id: 5,
     title: "Actively Staked",
     value: "120756775.11",
     icon: MonetizationOnIcon,
+    aos:'fade-up'
   },
   {
     id: 6,
     title: "Active Validators",
     value: "3781",
     icon: VerifiedIcon,
+    aos:'fade-up'
   },
   {
     id: 7,
     title: "Current Node",
     value: "10193",
     icon: OpenInBrowserIcon,
+    aos:'fade-up'
   },
   {
     id: 8,
     title: "Total Token",
     value: "155",
     icon: FaCoins,
+    aos:'fade-up'
   },
 ];
 
@@ -109,7 +117,7 @@ const Page = () => {
         <Grid container>
           {matrics.map((e) => {
             return (
-              <Grid item lg={4} md={6} sm={6} xs={12} key={e.id}>
+              <Grid item lg={4} md={6} sm={6} xs={12} key={e.id} data-aos={e.aos}>
                 <Card
                   sx={{
                     minWidth: 250,
@@ -127,11 +135,11 @@ const Page = () => {
                   }}
                 >
                   <CardContent>
-                    <e.icon style={{ fontSize: "50px", color: "#00DACD" }} />
+                    <e.icon style={{ fontSize: "70px", color: "#00DACD" }} />
                     <Typography
                       color="white"
                       gutterBottom
-                      sx={{ fontSize: "25px" }}
+                      sx={{ fontSize: { lg: "35px", sm: "30px", xs: "30px" } }}
                     >
                       {e.title}
                     </Typography>
@@ -139,7 +147,7 @@ const Page = () => {
                       sx={{
                         mb: 1.5,
                         mt: 2,
-                        fontSize: "14px",
+                        fontSize: { lg: "20px", sm: "20px", xs: "20px" },
                         fontWeight: "300",
                       }}
                       color="white"
