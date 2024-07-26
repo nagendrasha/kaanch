@@ -53,7 +53,7 @@ const Livedata = () => {
               minWidth: 250,
               m: 2,
               backgroundColor: "rgba(255, 255, 255, 0.1)",
-              color: "black",
+              color: "white",
               p: 2,
               borderRadius: 2,
             }}
@@ -61,7 +61,7 @@ const Livedata = () => {
             <CardContent>
               <Typography
                 variant="h6"
-                color="black"
+                color="white"
                 gutterBottom
                 sx={{ fontSize: "20px" }}
               >
@@ -77,7 +77,7 @@ const Livedata = () => {
               <Typography
                 variant="h6"
                 sx={{ mb: 1.5, mt: 3, fontSize: "16px" }}
-                color="black"
+                color="white"
               >
                 {e.desc}
               </Typography>

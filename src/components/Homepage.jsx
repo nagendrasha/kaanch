@@ -217,17 +217,16 @@ const Homepage = () => {
       <Wrapper>
         <Grid
           container
-          sx={{ height: { lg: "100%", sm: "500px", xs: "500px" } }}
+          sx={{ height: { lg: "auto", sm: "500px", xs: "500px" } }}
         >
+          {/* <Spline
+      scene="https://prod.spline.design/M3igXSmK1c7W4lFb/scene.splinecode" 
+    /> */}
           <Spline
-            scene="https://prod.spline.design/1QZHaDw9pDr9o7Sp/scene.splinecode"
+            scene="https://prod.spline.design/3c9yYnuYkeqq0oOU/scene.splinecode"
             width={1920}
             height={1080}
           />
-          {/* <Spline
-            scene="https://prod.spline.design/3c9yYnuYkeqq0oOU/scene.splinecode"
-           
-          /> */}
           <Content>
             <Grid
               container
@@ -256,8 +255,7 @@ const Homepage = () => {
                   Join a community of millions.
                 </Typography>
               </Grid>
-              <Grid item lg={6} sx={{ mt: 2,textAlign:'left' }} data-aos="fade-left">
-                <Box sx={{ textAlign:'left' }}>                
+              <Grid item lg={6} sx={{ mt: 2 }} data-aos="fade-left">
                 <Typography
                   variant="h1"
                   align="left"
@@ -277,9 +275,8 @@ const Homepage = () => {
                   variant="h6"
                   align="left"
                   sx={{
-                    color: "white",
+                    color: "black",
                     fontSize: { lg: "20px", sm: "14px", xs: "14px" },
-                    textAlign: "left", // Ensures alignment in different contexts
                   }}
                 >
                   FEE PAYING ACCOUNTS, ALL TIME
@@ -304,9 +301,8 @@ const Homepage = () => {
                   variant="h6"
                   align="left"
                   sx={{
-                    color: "white",
+                    color: "black",
                     fontSize: { lg: "20px", sm: "14px", xs: "14px" },
-                    textAlign: "left", // Ensures alignment in different contexts
                   }}
                 >
                   NIFT MINES
@@ -331,14 +327,12 @@ const Homepage = () => {
                   variant="h6"
                   align="left"
                   sx={{
-                    color: "white",
+                    color: "black",
                     fontSize: { lg: "20px", sm: "14px", xs: "14px" },
-                    textAlign: "left", // Ensures alignment in different contexts
                   }}
                 >
                   MEDIAN FEE PER TRANSACTION
                 </Typography>
-                </Box>
               </Grid>
             </Grid>
           </Content>
@@ -348,12 +342,11 @@ const Homepage = () => {
       <Wrapper>
         <Grid
           container
-          sx={{ height: { lg: "auto", sm: "500px", xs: "500px" } }}
+          sx={{ height: { lg: "1000px", sm: "500px", xs: "500px" } }}
         >
           <Spline
-            scene="https://prod.spline.design/zCmDK9e1EkkXzBZj/scene.splinecode"
-            width={1920}
-            height={1080}
+            scene="https://prod.spline.design/1QZHaDw9pDr9o7Sp/scene.splinecode"
+            
           />
           <Content>
             <Grid
@@ -368,7 +361,7 @@ const Homepage = () => {
                 <Typography
                   variant="h3"
                   sx={{
-                    color: "purple",
+                    color: "white",
                     fontSize: { lg: "50px", sm: "25px", xs: "25px" },
                   }}
                 >
@@ -495,7 +488,7 @@ const Homepage = () => {
         ))}
       </Grid> */}
 
-      <Grid
+      {/* <Grid
         container
         sx={{ backgroundColor: "black", p: { lg: 15, sm: 3, xs: 3 } }}
       >
@@ -547,7 +540,7 @@ const Homepage = () => {
             </Button>
           </Box>
         </Grid>
-      </Grid>
+      </Grid> */}
       {/* <main>
       <Spline
         scene="https://prod.spline.design/1QZHaDw9pDr9o7Sp/scene.splinecode" 
