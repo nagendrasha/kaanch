@@ -395,7 +395,9 @@ const Homepage = () => {
           </Content>
         </Grid>
       </Wrapper>
-
+      <main>
+        <Spline scene="https://prod.spline.design/xAxEX8kFlb1gqHZ6/scene.splinecode" />
+      </main>
       {/* <Grid
         container
         sx={{ backgroundColor: "black" }}
