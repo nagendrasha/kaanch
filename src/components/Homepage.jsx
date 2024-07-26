@@ -344,9 +344,6 @@ const Homepage = () => {
           container
           sx={{ height: { lg: "auto", sm: "500px", xs: "500px" } }}
         >
-          {/* <Spline
-      scene="https://prod.spline.design/M3igXSmK1c7W4lFb/scene.splinecode" 
-    /> */}
           <Spline
             scene="https://prod.spline.design/zCmDK9e1EkkXzBZj/scene.splinecode"
             width={1920}
@@ -380,100 +377,119 @@ const Homepage = () => {
         </Grid>
       </Wrapper>
 
-      <Grid
-        container
-        sx={{ backgroundColor: "black", px: { lg: 15, sm: 5, xs: 5 }, py: 5 }}
-      >
-        <Grid item lg={6} data-aos="fade-up">
-          <Typography
-            variant="h3"
-            sx={{
-              color: "white",
-              fontSize: { lg: "40px", sm: "25px", xs: "25px" },
-            }}
-          >
-            Designed for real world use.
-          </Typography>
-        </Grid>
-        <Grid item lg={6}>
-          <Button
-            variant="outlined"
-            sx={{
-              borderRadius: "100px",
-              color: "white",
-              border: "1px solid white",
-              float: "right",
-              mt: { lg: 2, sm: 2, xs: 2 },
-            }}
-          >
-            GO TO CASE STUDIES <ArrowForwardIcon sx={{ color: "white" }} />
-          </Button>
-        </Grid>
+      <Wrapper>
         <Grid
-          item
-          lg={12}
-          sx={{
-            position: "relative",
-            borderRadius: "20px",
-            backgroundImage: `url(${bg1.src})`,
-            backgroundSize: "cover",
-            backgroundColor: "gray",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            p: 4,
-            mt: 2,
-            overflow: "hidden",
-            "&::before": {
-              content: '""',
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              backgroundColor: "rgba(0, 0, 0, 0.5)", // Adjust the opacity as needed
-              zIndex: 1, // Ensure the overlay is above the background but below the content
-            },
-          }}
-          data-aos="zoom-in"
+          container
+          sx={{ height: { lg: "auto", sm: "500px", xs: "500px" } }}
         >
-          <Box
-            sx={{
-              position: "relative",
-              zIndex: 2, // Ensure content is above the overlay
-            }}
-          >
-            <Button
-              variant="contained"
+          <Spline
+            scene="https://prod.spline.design/caj7pZJjlN1tDIqs/scene.splinecode"
+            width={1920}
+            height={1080}
+          />
+          <Content>
+            <Grid
+              container
               sx={{
-                backgroundColor: "purple",
-                color: "white",
-                borderRadius: "100px",
-                mb: 2,
+                backgroundColor: "transparent",
+                px: { lg: 15, sm: 5, xs: 5 },
+                py: 5,
               }}
             >
-              Case Study
-            </Button>
-            <Typography variant="h2" sx={{ color: "white", mt: 2 }}>
-              XP
-            </Typography>
-            <Typography variant="h6" sx={{ color: "white", mt: 2 }}>
-              XP aims to save consumers from high event ticket fees using
-              Solana.
-            </Typography>
-            <Button
-              variant="outlined"
-              sx={{
-                borderRadius: "100px",
-                border: "1px solid white",
-                p: 2,
-                mt: 2,
-              }}
-            >
-              <ArrowForwardIcon sx={{ color: "white" }} />
-            </Button>
-          </Box>
+              {/* <Grid item lg={6} data-aos="fade-up">
+                <Typography
+                  variant="h3"
+                  sx={{
+                    color: "white",
+                    fontSize: { lg: "40px", sm: "25px", xs: "25px" },
+                  }}
+                >
+                  Designed for real world use.
+                </Typography>
+              </Grid>
+              <Grid item lg={6}>
+                <Button
+                  variant="outlined"
+                  sx={{
+                    borderRadius: "100px",
+                    color: "white",
+                    border: "1px solid white",
+                    float: "right",
+                    mt: { lg: 2, sm: 2, xs: 2 },
+                  }}
+                >
+                  GO TO CASE STUDIES{" "}
+                  <ArrowForwardIcon sx={{ color: "white" }} />
+                </Button>
+              </Grid> */}
+              {/* <Grid
+                item
+                lg={12}
+                sx={{
+                  position: "relative",
+                  borderRadius: "20px",
+                  backgroundImage: `url(${bg1.src})`,
+                  backgroundSize: "cover",
+                  backgroundColor: "gray",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  p: 4,
+                  mt: 2,
+                  overflow: "hidden",
+                  "&::before": {
+                    content: '""',
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    backgroundColor: "rgba(0, 0, 0, 0.5)", // Adjust the opacity as needed
+                    zIndex: 1, // Ensure the overlay is above the background but below the content
+                  },
+                }}
+                data-aos="zoom-in"
+              >
+                <Box
+                  sx={{
+                    position: "relative",
+                    zIndex: 2, // Ensure content is above the overlay
+                  }}
+                >
+                  <Button
+                    variant="contained"
+                    sx={{
+                      backgroundColor: "purple",
+                      color: "white",
+                      borderRadius: "100px",
+                      mb: 2,
+                    }}
+                  >
+                    Case Study
+                  </Button>
+                  <Typography variant="h2" sx={{ color: "white", mt: 2 }}>
+                    XP
+                  </Typography>
+                  <Typography variant="h6" sx={{ color: "white", mt: 2 }}>
+                    XP aims to save consumers from high event ticket fees using
+                    Solana.
+                  </Typography>
+                  <Button
+                    variant="outlined"
+                    sx={{
+                      borderRadius: "100px",
+                      border: "1px solid white",
+                      p: 2,
+                      mt: 2,
+                    }}
+                  >
+                    <ArrowForwardIcon sx={{ color: "white" }} />
+                  </Button>
+                </Box>
+              </Grid> */}
+            </Grid>
+          </Content>
         </Grid>
-      </Grid>
+      </Wrapper>
 
       <Grid
         container
@@ -617,20 +633,6 @@ const Homepage = () => {
           </Box>
         </Grid>
       </Grid>
-      <main>
-        <Spline
-          scene="https://prod.spline.design/6SjOXeB2lyrB6BO8/scene.splinecode"
-          width={1600}
-          height={900}
-        />
-      </main>
-      <main>
-        <Spline
-          scene="https://prod.spline.design/3c9yYnuYkeqq0oOU/scene.splinecode"
-          width={1600}
-          height={900}
-        />
-      </main>
     </>
   );
 };
