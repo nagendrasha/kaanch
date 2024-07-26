@@ -217,16 +217,17 @@ const Homepage = () => {
       <Wrapper>
         <Grid
           container
-          sx={{ height: { lg: "auto", sm: "500px", xs: "500px" } }}
+          sx={{ height: { lg: "100%", sm: "500px", xs: "500px" } }}
         >
-          {/* <Spline
-      scene="https://prod.spline.design/M3igXSmK1c7W4lFb/scene.splinecode" 
-    /> */}
           <Spline
-            scene="https://prod.spline.design/3c9yYnuYkeqq0oOU/scene.splinecode"
+            scene="https://prod.spline.design/1QZHaDw9pDr9o7Sp/scene.splinecode"
             width={1920}
             height={1080}
           />
+          {/* <Spline
+            scene="https://prod.spline.design/3c9yYnuYkeqq0oOU/scene.splinecode"
+           
+          /> */}
           <Content>
             <Grid
               container
@@ -255,7 +256,8 @@ const Homepage = () => {
                   Join a community of millions.
                 </Typography>
               </Grid>
-              <Grid item lg={6} sx={{ mt: 2 }} data-aos="fade-left">
+              <Grid item lg={6} sx={{ mt: 2,textAlign:'left' }} data-aos="fade-left">
+                <Box sx={{ textAlign:'left' }}>                
                 <Typography
                   variant="h1"
                   align="left"
@@ -275,8 +277,9 @@ const Homepage = () => {
                   variant="h6"
                   align="left"
                   sx={{
-                    color: "black",
+                    color: "white",
                     fontSize: { lg: "20px", sm: "14px", xs: "14px" },
+                    textAlign: "left", // Ensures alignment in different contexts
                   }}
                 >
                   FEE PAYING ACCOUNTS, ALL TIME
@@ -301,8 +304,9 @@ const Homepage = () => {
                   variant="h6"
                   align="left"
                   sx={{
-                    color: "black",
+                    color: "white",
                     fontSize: { lg: "20px", sm: "14px", xs: "14px" },
+                    textAlign: "left", // Ensures alignment in different contexts
                   }}
                 >
                   NIFT MINES
@@ -327,12 +331,14 @@ const Homepage = () => {
                   variant="h6"
                   align="left"
                   sx={{
-                    color: "black",
+                    color: "white",
                     fontSize: { lg: "20px", sm: "14px", xs: "14px" },
+                    textAlign: "left", // Ensures alignment in different contexts
                   }}
                 >
                   MEDIAN FEE PER TRANSACTION
                 </Typography>
+                </Box>
               </Grid>
             </Grid>
           </Content>
@@ -395,105 +401,14 @@ const Homepage = () => {
                 px: { lg: 15, sm: 5, xs: 5 },
                 py: 5,
               }}
-            >
-              {/* <Grid item lg={6} data-aos="fade-up">
-                <Typography
-                  variant="h3"
-                  sx={{
-                    color: "white",
-                    fontSize: { lg: "40px", sm: "25px", xs: "25px" },
-                  }}
-                >
-                  Designed for real world use.
-                </Typography>
-              </Grid>
-              <Grid item lg={6}>
-                <Button
-                  variant="outlined"
-                  sx={{
-                    borderRadius: "100px",
-                    color: "white",
-                    border: "1px solid white",
-                    float: "right",
-                    mt: { lg: 2, sm: 2, xs: 2 },
-                  }}
-                >
-                  GO TO CASE STUDIES{" "}
-                  <ArrowForwardIcon sx={{ color: "white" }} />
-                </Button>
-              </Grid> */}
-              {/* <Grid
-                item
-                lg={12}
-                sx={{
-                  position: "relative",
-                  borderRadius: "20px",
-                  backgroundImage: `url(${bg1.src})`,
-                  backgroundSize: "cover",
-                  backgroundColor: "gray",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                  p: 4,
-                  mt: 2,
-                  overflow: "hidden",
-                  "&::before": {
-                    content: '""',
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                    backgroundColor: "rgba(0, 0, 0, 0.5)", // Adjust the opacity as needed
-                    zIndex: 1, // Ensure the overlay is above the background but below the content
-                  },
-                }}
-                data-aos="zoom-in"
-              >
-                <Box
-                  sx={{
-                    position: "relative",
-                    zIndex: 2, // Ensure content is above the overlay
-                  }}
-                >
-                  <Button
-                    variant="contained"
-                    sx={{
-                      backgroundColor: "purple",
-                      color: "white",
-                      borderRadius: "100px",
-                      mb: 2,
-                    }}
-                  >
-                    Case Study
-                  </Button>
-                  <Typography variant="h2" sx={{ color: "white", mt: 2 }}>
-                    XP
-                  </Typography>
-                  <Typography variant="h6" sx={{ color: "white", mt: 2 }}>
-                    XP aims to save consumers from high event ticket fees using
-                    Solana.
-                  </Typography>
-                  <Button
-                    variant="outlined"
-                    sx={{
-                      borderRadius: "100px",
-                      border: "1px solid white",
-                      p: 2,
-                      mt: 2,
-                    }}
-                  >
-                    <ArrowForwardIcon sx={{ color: "white" }} />
-                  </Button>
-                </Box>
-              </Grid> */}
-            </Grid>
+            ></Grid>
           </Content>
         </Grid>
       </Wrapper>
 
-      <Grid
+      {/* <Grid
         container
-        sx={{ backgroundColor: "black", px: { lg: 15, sm: 2, xs: 2 } }}
+        sx={{ backgroundColor: "black" }}
       >
         {boxes.map((e) => (
           <Grid
@@ -578,7 +493,7 @@ const Homepage = () => {
             </Box>
           </Grid>
         ))}
-      </Grid>
+      </Grid> */}
 
       <Grid
         container
@@ -633,6 +548,11 @@ const Homepage = () => {
           </Box>
         </Grid>
       </Grid>
+      {/* <main>
+      <Spline
+        scene="https://prod.spline.design/1QZHaDw9pDr9o7Sp/scene.splinecode" 
+      />
+    </main> */}
     </>
   );
 };
