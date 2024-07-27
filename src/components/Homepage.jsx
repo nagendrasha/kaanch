@@ -190,6 +190,40 @@ const Homepage = () => {
           container
           sx={{ height: { lg: "1000px", sm: "500px", xs: "500px" } }}
         >
+          <Spline scene="https://prod.spline.design/1QZHaDw9pDr9o7Sp/scene.splinecode" />
+          <Content>
+            <Grid
+              container
+              sx={{
+                backgroundColor: "transparent",
+                px: { lg: 15, sm: 2, xs: 2 },
+                py: 10,
+              }}
+            >
+              <Grid item lg={4} data-aos="fade-up">
+                <Typography
+                  variant="h3"
+                  sx={{
+                    color: "white",
+                    fontSize: { lg: "50px", sm: "25px", xs: "25px" },
+                  }}
+                >
+                  Made for mass adoption.
+                </Typography>
+              </Grid>
+              <Grid item lg={8} data-aos="fade-up">
+                <Livedata />
+              </Grid>
+            </Grid>
+          </Content>
+        </Grid>
+      </Wrapper>
+
+      <Wrapper>
+        <Grid
+          container
+          sx={{ height: { lg: "1000px", sm: "500px", xs: "500px" } }}
+        >
           {/* <Spline
       scene="https://prod.spline.design/M3igXSmK1c7W4lFb/scene.splinecode" 
     /> */}
@@ -305,40 +339,6 @@ const Homepage = () => {
                 >
                   MEDIAN FEE PER TRANSACTION
                 </Typography>
-              </Grid>
-            </Grid>
-          </Content>
-        </Grid>
-      </Wrapper>
-
-      <Wrapper>
-        <Grid
-          container
-          sx={{ height: { lg: "1000px", sm: "500px", xs: "500px" } }}
-        >
-          <Spline scene="https://prod.spline.design/1QZHaDw9pDr9o7Sp/scene.splinecode" />
-          <Content>
-            <Grid
-              container
-              sx={{
-                backgroundColor: "transparent",
-                px: { lg: 15, sm: 2, xs: 2 },
-                py: 10,
-              }}
-            >
-              <Grid item lg={4} data-aos="fade-up">
-                <Typography
-                  variant="h3"
-                  sx={{
-                    color: "white",
-                    fontSize: { lg: "50px", sm: "25px", xs: "25px" },
-                  }}
-                >
-                  Made for mass adoption.
-                </Typography>
-              </Grid>
-              <Grid item lg={8} data-aos="fade-up">
-                <Livedata />
               </Grid>
             </Grid>
           </Content>
