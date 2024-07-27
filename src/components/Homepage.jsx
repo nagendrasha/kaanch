@@ -18,33 +18,6 @@ import Spline from "@splinetool/react-spline";
 // import Spline from '@splinetool/react-spline/next'
 import styled from "styled-components";
 
-const boxes = [
-  {
-    id: 1,
-    title: "Crypto",
-    image: crypto,
-    desc: "Boba Guys used a Solana-powered loyalty program to increase monthly sales by 67%.",
-    link: "https://www.bobaguy.com/",
-    aos: "fade-right",
-  },
-  {
-    id: 2,
-    title: "Homebase",
-    image: blockchain,
-    desc: "Homebase used the Solana blockchain to successfully tokenized a single-family rental property.",
-    link: "https://www.bobaguy.com/",
-    aos: "fade-up",
-  },
-  {
-    id: 3,
-    title: "Hivemapper",
-    image: hivemapper,
-    desc: "Hivemapper decentralizes mapping with better real-time data and community incentives",
-    link: "https://www.bobaguy.com/",
-    aos: "fade-left",
-  },
-];
-
 const features = [
   {
     id: 1,
@@ -86,7 +59,7 @@ const Homepage = () => {
         >
           {/* <Spline scene="https://prod.spline.design/M3igXSmK1c7W4lFb/scene.splinecode" /> */}
           <Spline
-            scene="https://prod.spline.design/M3igXSmK1c7W4lFb/scene.splinecode"
+            scene="https://prod.spline.design/0gQNa1vmdmb-ir1U/scene.splinecode"
             width={1920}
             height={1080}
           />
@@ -222,11 +195,13 @@ const Homepage = () => {
           {/* <Spline
       scene="https://prod.spline.design/M3igXSmK1c7W4lFb/scene.splinecode" 
     /> */}
+
           <Spline
-            scene="https://prod.spline.design/3c9yYnuYkeqq0oOU/scene.splinecode"
+            scene="https://prod.spline.design/leoVzHvBcKKpSYuy/scene.splinecode"
             width={1920}
             height={1080}
           />
+
           <Content>
             <Grid
               container
@@ -398,153 +373,6 @@ const Homepage = () => {
       <main>
         <Spline scene="https://prod.spline.design/xAxEX8kFlb1gqHZ6/scene.splinecode" />
       </main>
-      {/* <Grid
-        container
-        sx={{ backgroundColor: "black" }}
-      >
-        {boxes.map((e) => (
-          <Grid
-            key={e.id}
-            data-aos="fade-left"
-            item
-            lg={3.5}
-            sx={{
-              position: "relative",
-              borderRadius: "20px",
-              backgroundImage: `url(${e.image.src})`,
-              backgroundSize: "cover",
-              backgroundColor: "gray",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              p: { lg: 4, sm: 3, xs: 3 },
-              mt: 2,
-              mx: 2,
-              overflow: "hidden",
-              "&::before": {
-                content: '""',
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-                backgroundColor: "rgba(0, 0, 0, 0.5)", // Adjust the opacity as needed
-                zIndex: 1, // Ensure the overlay is above the background but below the content
-              },
-              "&::after": {
-                content: '""',
-                position: "absolute",
-                bottom: 0,
-                left: 0,
-                width: "100%",
-                height: "0%",
-                background:
-                  "linear-gradient(146deg, rgba(0,0,0,0.16150210084033612) 29%, rgba(0,0,0,0.7049194677871149) 100%)",
-                zIndex: 2, // Ensure this is above the overlay
-              },
-              "&:hover::after": {
-                height: "100%", // Adjust the height as needed
-              },
-            }}
-          >
-            <Box
-              sx={{
-                position: "relative",
-                zIndex: 2, // Ensure content is above the overlay
-              }}
-            >
-              <Button
-                variant="contained"
-                sx={{
-                  backgroundColor: "purple",
-                  color: "white",
-                  borderRadius: "100px",
-                }}
-              >
-                {e.title}
-              </Button>
-
-              <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-                <Typography variant="h5" sx={{ color: "white", mt: 2 }}>
-                  {e.title}
-                </Typography>
-                <Button
-                  variant="outlined"
-                  small="true"
-                  sx={{
-                    borderRadius: "100px",
-                    border: "1px solid white",
-                    p: 1,
-                  }}
-                >
-                  <ArrowForwardIcon sx={{ color: "white" }} />
-                </Button>
-              </Box>
-              <Typography variant="h6" sx={{ color: "white", mt: 2 }}>
-                {e.desc}
-              </Typography>
-            </Box>
-          </Grid>
-        ))}
-      </Grid> */}
-
-      {/* <Grid
-        container
-        sx={{ backgroundColor: "black", p: { lg: 15, sm: 3, xs: 3 } }}
-      >
-        <Grid
-          item
-          xs={12}
-          md={12}
-          sx={{
-            backgroundColor: "rgba(255, 255, 255, 0.1)",
-            py: 15,
-            px: { lg: 10, sm: 2, xs: 2 },
-            borderRadius: "20px",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            textAlign: "center",
-          }}
-          data-aos="flip-up"
-        >
-          <Typography
-            variant="h2"
-            sx={{
-              color: "white",
-              fontSize: { lg: "50px", sm: "25px", xs: "25px" },
-            }}
-          >
-            It's time to join the thousands of creators, artists, and developers
-            using Solana.
-          </Typography>
-          <Box>
-            <Button
-              variant="contained"
-              sx={{
-                color: "white",
-                width: 200,
-                mt: 2,
-                p: "15px 30px",
-                borderRadius: "100px",
-                mr: "10px",
-                "&:hover": {
-                  background: "white",
-                  color: "black",
-                },
-                background:
-                  "linear-gradient(108deg, rgba(0,218,205,1) 54%, rgba(0,0,0,1) 100%)",
-              }}
-            >
-              Start Building
-            </Button>
-          </Box>
-        </Grid>
-      </Grid> */}
-      {/* <main>
-      <Spline
-        scene="https://prod.spline.design/1QZHaDw9pDr9o7Sp/scene.splinecode" 
-      />
-    </main> */}
     </>
   );
 };
