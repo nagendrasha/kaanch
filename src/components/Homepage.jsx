@@ -58,11 +58,7 @@ const Homepage = () => {
           }}
         >
           {/* <Spline scene="https://prod.spline.design/M3igXSmK1c7W4lFb/scene.splinecode" /> */}
-          <Spline
-            scene="https://prod.spline.design/0gQNa1vmdmb-ir1U/scene.splinecode"
-            width={1920}
-            height={1080}
-          />
+          <Spline scene="https://prod.spline.design/0gQNa1vmdmb-ir1U/scene.splinecode" />
           <Content>
             <Box
               sx={{
@@ -93,11 +89,12 @@ const Homepage = () => {
                     borderRadius: "100px",
                     mr: "10px",
                     "&:hover": {
-                      background: "white",
-                      color: "black",
+                      background: "black",
+                      color: "white",
+                      border: "1px solid white",
                     },
-                    backgroundColor: "Green",
-                    color: "white",
+                    backgroundColor: "white",
+                    color: "black",
                   }}
                 >
                   Start Building
@@ -118,13 +115,14 @@ const Homepage = () => {
                   variant="outlined"
                   sx={{
                     float: { lg: "left" },
-                    color: "black",
+                    color: "white",
+                    backgroundColor: "black",
                     "&:hover": {
                       background: "white",
                       color: "black",
                     },
                     p: "15px 30px",
-                    border: "1px solid black",
+                    border: "1px solid white",
                     borderRadius: "100px",
                   }}
                 >
@@ -190,18 +188,12 @@ const Homepage = () => {
       <Wrapper>
         <Grid
           container
-          sx={{ height: { lg: "auto", sm: "500px", xs: "500px" } }}
+          sx={{ height: { lg: "1000px", sm: "500px", xs: "500px" } }}
         >
           {/* <Spline
       scene="https://prod.spline.design/M3igXSmK1c7W4lFb/scene.splinecode" 
     /> */}
-
-          <Spline
-            scene="https://prod.spline.design/leoVzHvBcKKpSYuy/scene.splinecode"
-            width={1920}
-            height={1080}
-          />
-
+          <Spline scene="https://prod.spline.design/leoVzHvBcKKpSYuy/scene.splinecode" />
           <Content>
             <Grid
               container
@@ -218,7 +210,7 @@ const Homepage = () => {
                   variant="h3"
                   align="left"
                   sx={{
-                    color: "orange",
+                    color: "white",
                     fontSize: {
                       lg: "55px",
                       sm: "25px",
@@ -250,8 +242,13 @@ const Homepage = () => {
                   variant="h6"
                   align="left"
                   sx={{
-                    color: "black",
-                    fontSize: { lg: "20px", sm: "14px", xs: "14px" },
+                    color: "white",
+                    fontSize: {
+                      lg: "20px",
+                      sm: "14px",
+                      xs: "14px",
+                      ml: { lg: "100px", sm: "0px", xs: "0px" },
+                    },
                   }}
                 >
                   FEE PAYING ACCOUNTS, ALL TIME
@@ -276,7 +273,7 @@ const Homepage = () => {
                   variant="h6"
                   align="left"
                   sx={{
-                    color: "black",
+                    color: "white",
                     fontSize: { lg: "20px", sm: "14px", xs: "14px" },
                   }}
                 >
@@ -302,7 +299,7 @@ const Homepage = () => {
                   variant="h6"
                   align="left"
                   sx={{
-                    color: "black",
+                    color: "white",
                     fontSize: { lg: "20px", sm: "14px", xs: "14px" },
                   }}
                 >
@@ -353,11 +350,7 @@ const Homepage = () => {
           container
           sx={{ height: { lg: "auto", sm: "500px", xs: "500px" } }}
         >
-          <Spline
-            scene="https://prod.spline.design/caj7pZJjlN1tDIqs/scene.splinecode"
-            width={1920}
-            height={1080}
-          />
+          <Spline scene="https://prod.spline.design/caj7pZJjlN1tDIqs/scene.splinecode" />
           <Content>
             <Grid
               container
