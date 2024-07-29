@@ -310,8 +310,28 @@ const Homepage = () => {
           </Content>
         </Grid>
       </Wrapper>
+      
 
       <Wrapper>
+        <Grid
+          container
+          sx={{ height: { lg: "auto", sm: "500px", xs: "500px" } }}
+        >
+          <Spline scene="https://prod.spline.design/caj7pZJjlN1tDIqs/scene.splinecode" />
+          <Content>
+            <Grid
+              container
+              sx={{
+                backgroundColor: "transparent",
+                px: { lg: 10, sm: 5, xs: 5 },
+                py: 5,
+              }}
+            ></Grid>
+          </Content>
+        </Grid>
+      </Wrapper>
+
+       <Wrapper>
         <Grid
           container
           sx={{ height: { lg: "1000px", sm: "2000px", xs: "2000px" } }}
@@ -341,25 +361,6 @@ const Homepage = () => {
                 <Livedata />
               </Grid>
             </Grid>
-          </Content>
-        </Grid>
-      </Wrapper>
-
-      <Wrapper>
-        <Grid
-          container
-          sx={{ height: { lg: "auto", sm: "500px", xs: "500px" } }}
-        >
-          <Spline scene="https://prod.spline.design/caj7pZJjlN1tDIqs/scene.splinecode" />
-          <Content>
-            <Grid
-              container
-              sx={{
-                backgroundColor: "transparent",
-                px: { lg: 10, sm: 5, xs: 5 },
-                py: 5,
-              }}
-            ></Grid>
           </Content>
         </Grid>
       </Wrapper>
