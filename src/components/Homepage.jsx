@@ -190,10 +190,8 @@ const Homepage = () => {
           container
           sx={{ height: { lg: "1000px", sm: "600px", xs: "600px" } }}
         >
-          {/* <Spline
-      scene="https://prod.spline.design/M3igXSmK1c7W4lFb/scene.splinecode" 
-    /> */}
-          <Spline scene="https://prod.spline.design/leoVzHvBcKKpSYuy/scene.splinecode" />
+          {/* <Spline scene="https://prod.spline.design/leoVzHvBcKKpSYuy/scene.splinecode" /> */}
+          <Spline scene="https://prod.spline.design/wegvjFzSQKXKZjyr/scene.splinecode" />
           <Content>
             <Grid
               container
