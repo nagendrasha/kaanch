@@ -58,7 +58,7 @@ const Homepage = () => {
           }}
         >
           {/* <Spline scene="https://prod.spline.design/M3igXSmK1c7W4lFb/scene.splinecode" /> */}
-          <Spline scene="https://prod.spline.design/0gQNa1vmdmb-ir1U/scene.splinecode" />
+          <Spline scene="https://prod.spline.design/6cysTd2hMGr6NAmp/scene.splinecode" />
           <Content>
             <Box
               sx={{
