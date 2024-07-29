@@ -53,7 +53,7 @@ const Homepage = () => {
         <Grid
           container
           sx={{
-            height: { lg: "700px", sm: "500px", xs: "500px" },
+            height: { lg: "700px", sm: "700px", xs: "700px" },
             width: { lg: "100%" },
           }}
         >
@@ -188,7 +188,7 @@ const Homepage = () => {
       <Wrapper>
         <Grid
           container
-          sx={{ height: { lg: "1000px", sm: "500px", xs: "500px" } }}
+          sx={{ height: { lg: "1000px", sm: "700px", xs: "700px" } }}
         >
           {/* <Spline
       scene="https://prod.spline.design/M3igXSmK1c7W4lFb/scene.splinecode" 
@@ -314,7 +314,7 @@ const Homepage = () => {
       <Wrapper>
         <Grid
           container
-          sx={{ height: { lg: "1000px", sm: "500px", xs: "500px" } }}
+          sx={{ height: { lg: "1000px", sm: "2000px", xs: "2000px" } }}
         >
           <Spline scene="https://prod.spline.design/1QZHaDw9pDr9o7Sp/scene.splinecode" />
           <Content>
